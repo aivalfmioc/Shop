@@ -1,0 +1,51 @@
+<div mat-dialog-title>
+    <h1>Product Form</h1>
+</div>
+<form [formGroup]="productForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" placeholder="Name" formControlName="name">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput type="number" class="example-right-align" placeholder="0.00" formControlName="price">
+                <!--  <span matTextPrefix>$&nbsp;</span>? -->
+                <!-- <span matTextSuffix>.00</span> -->
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="fill">
+                <mat-label>Category</mat-label>
+                <mat-select formControlName="category">
+                    <mat-option *ngFor="let val of category" [value]="val">
+                        {{val}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Expiry date</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="expiryDate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Units in stock</mat-label>
+                <input matInput type="number" class="example-right-align" placeholder="Units in stock"
+                    formControlName="unitsInStock">
+                <!--  <span matTextPrefix>$&nbsp;</span>? -->
+                <!-- <span matTextSuffix>.00</span> -->
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update':'Save'}}</button>
+    </div>
+</form>

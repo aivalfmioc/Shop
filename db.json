@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "name": "Cat food",
+      "price": 7,
+      "category": "Pet shop",
+      "expiryDate": "2023-10-31T23:00:00.000Z",
+      "unitsInStock": 0,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 1
+    },
+    {
+      "name": "Rosemary",
+      "price": 9,
+      "category": "Plants",
+      "expiryDate": "2023-11-29T23:00:00.000Z",
+      "unitsInStock": 10,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 2
+    },
+    {
+      "name": "Peach",
+      "price": 10,
+      "category": "Fresh foods",
+      "expiryDate": "2023-11-20T23:00:00.000Z",
+      "unitsInStock": 100,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 3
+    },
+    {
+      "name": "Carrot",
+      "price": 5,
+      "category": "Fresh foods",
+      "expiryDate": "2023-11-19T23:00:00.000Z",
+      "unitsInStock": 10,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 4
+    },
+    {
+      "name": "Beer",
+      "price": 15,
+      "category": "Alcohol",
+      "expiryDate": "2024-01-23T23:00:00.000Z",
+      "unitsInStock": 135,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 5
+    },
+    {
+      "name": "Wine",
+      "price": 125,
+      "category": "Alcohol",
+      "expiryDate": "2024-03-19T23:00:00.000Z",
+      "unitsInStock": 50,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 6
+    },
+    {
+      "name": "Berries",
+      "price": 15,
+      "category": "Frozen foods",
+      "expiryDate": "2024-06-26T22:00:00.000Z",
+      "unitsInStock": 120,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 7
+    },
+    {
+      "name": "Tomatoes",
+      "price": 5,
+      "category": "Fresh foods",
+      "expiryDate": "2023-11-19T23:00:00.000Z",
+      "unitsInStock": 10,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 8
+    },
+    {
+      "name": "Corn",
+      "price": 5,
+      "category": "Fresh foods",
+      "expiryDate": "2023-11-19T23:00:00.000Z",
+      "unitsInStock": 10,
+      "presentDate": "2023-11-19",
+      "modifiedDate": "2023-11-19",
+      "id": 9
+    }
+  ]
+}
